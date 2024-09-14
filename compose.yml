@@ -1,13 +1,16 @@
 services:
   api-students:
     build: ./api-students
+    image: kartago124/api-students
     ports:
       - 8000:8000
   websimple:
     build: ./websimple
+    image: kartago124/websimple
     ports:
       - 8080:80
   webplantilla:
     build: ./webplantilla
+    image: kartago124/webplantilla
     ports:
       - 8081:80
